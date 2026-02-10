@@ -1,0 +1,15 @@
+{
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "python.analysis.typeCheckingMode": "basic",
+
+    "editor.formatOnSave": true,
+
+    "ruff.formatOnSave": true,
+    "ruff.lint.run": "onSave",
+
+    "python.envFile": "${workspaceFolder}/.env",
+
+    "terminal.integrated.env.osx": {
+        "PYTHONUNBUFFERED": "1"
+    }
+}
