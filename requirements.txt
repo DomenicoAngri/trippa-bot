@@ -1,0 +1,15 @@
+# Core dependencies
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Scheduling
+schedule>=1.2.0
+
+# Telegram notifications
+python-telegram-bot>=20.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# HTML parsing (for JS analysis)
+lxml>=4.9.0
