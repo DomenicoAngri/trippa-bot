@@ -27,14 +27,16 @@ USER_DATA = {
 
 BOOKING_PREFERENCES = {
     # Number of guests
-    "party_size": int(os.getenv("PARTY_SIZE", "2")),
+    # "party_size": int(os.getenv("PARTY_SIZE", "2")),
+    "party_size": 1,
     
     # Preferred time slots (in order of preference)
     "preferred_times": [
         "20:00",
         "20:15",
         "20:30",
-        "21:00"
+        "21:00",
+        "21:30"
     ],
     
     # Preferred area (None = any, 263371 = TAVOLO, 263372 = BANCONE)
@@ -42,6 +44,7 @@ BOOKING_PREFERENCES = {
     
     # Target dates you want to book
     "target_dates": [
+        "2026-03-13",
         "2026-04-15",
         "2026-04-22",
         "2026-04-29"
@@ -99,13 +102,14 @@ MONITOR_CONFIG = {
 
 TELEGRAM_CONFIG = {
     # Enable/disable Telegram notifications
-    "enabled": os.getenv("TELEGRAM_ENABLED", "true").lower() == "true",
+    # "enabled": os.getenv("TELEGRAM_ENABLED", "true").lower() == "true",
+    "enabled": False,
     
     # Bot token from @BotFather
-    "bot_token": os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_BOT_TOKEN_HERE"),
+    # "bot_token": os.getenv("TELEGRAM_BOT_TOKEN", "YOUR_BOT_TOKEN_HERE"),
     
     # Your chat ID from @userinfobot
-    "chat_id": os.getenv("TELEGRAM_CHAT_ID", "YOUR_CHAT_ID_HERE"),
+    # "chat_id": os.getenv("TELEGRAM_CHAT_ID", "YOUR_CHAT_ID_HERE"),
 }
 
 # =============================================================================

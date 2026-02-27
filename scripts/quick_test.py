@@ -8,7 +8,9 @@ import sys
 from pathlib import Path
 
 # Add src to path
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
+#sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from src.api import ResDiaryClient
 from src.notifiers import TelegramNotifier
@@ -163,6 +165,7 @@ def main():
     print("=" * 60)
     
     all_passed = True
+
     for name, passed in results:
         status = "✅" if passed else "❌"
         print(f"{status} {name}")
